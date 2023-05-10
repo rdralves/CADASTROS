@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from CadastroCliente.models import Cliente
 
 # Create your views here.
 def index(request):
@@ -10,3 +11,7 @@ def index(request):
     }
 
     return render(request, 'index.html', context)
+
+
+def listar_clientes(request):
+    return render(request, 'listar_clientes.html')
