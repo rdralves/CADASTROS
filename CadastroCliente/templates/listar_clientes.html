@@ -10,8 +10,8 @@
     <h1>Clientes Senac - SMP</h1>
 
     <ul>
-        {% for x in cliente %}
-        <li> <a href="/cliente">{{ x.nome }}</a> - {{ x.data_nascimento }}</li>
+        {% for x in clientes %}
+        <li> <a href="/cliente/{{ x.id }}" >{{ x.nome }}</a> - {{ x.data_nascimento }}</li>
         {% endfor %}
         
     </ul>
