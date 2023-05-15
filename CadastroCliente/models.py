@@ -51,7 +51,7 @@ class Cliente(models.Model):
     profissao = models.ForeignKey(
         Profissao, on_delete=models.SET_NULL, null=True)
     
-    Interesse = models.ManyToManyField(Interesse)
+    interesse = models.ManyToManyField(Interesse)
 
     def __str__(self):
         return self.nome
