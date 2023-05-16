@@ -1,0 +1,14 @@
+*{
+    color:blue;
+    font-size: 15px;
+    font-style: italic;
+}
+
+h2, h3 {
+    color: green;
+    font-weight: bold;
+}
+
+.TextoLaranja {
+    color: orange;
+}
